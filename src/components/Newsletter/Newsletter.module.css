@@ -1,0 +1,83 @@
+.container {
+  display: flex;
+}
+
+.container p {
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.container > .inner_container {
+  margin: auto;
+  
+}
+
+.container > .inner_container button {
+  border-radius: 20px;
+  background: blue;
+  padding: 10px 20px;
+  color: white;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+
+.container > .inner_container button:hover {
+  background: rgb(19, 19, 97);
+  transform: scale(1.1);
+}
+
+.container > .inner_container div {
+  margin: auto;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  padding: 0 0 0 20px;
+  border: 1px solid blue;
+}
+
+.container > .inner_container input {
+  border: none;
+  flex: 1;
+}
+
+.container > .inner_container input:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 2rem;
+  }
+
+  .container p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .container > .inner_container div {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+  }
+  .container > .inner_container input {
+    border: 1px solid blue;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .container > .inner_container button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .container {
+    padding: 1rem;
+  }
+}

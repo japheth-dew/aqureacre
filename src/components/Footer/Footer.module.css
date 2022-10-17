@@ -1,0 +1,32 @@
+.inner_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.inner_container .left_container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.inner_container .right_container {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .inner_container {
+    flex-direction: column;
+  }
+  .inner_container .left_container {
+    width: 100%;
+  }
+  .inner_container .right_container {
+    width: 100%;
+  }
+}
+    
