@@ -3,6 +3,7 @@ import Newsletter from "../Newsletter/Newsletter";
 import Showcase from "../Showcase/Showcase";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import What from "../WhatWeDo/What";
 
 const Body = () => {
     useEffect(() => {
@@ -14,6 +15,9 @@ const Body = () => {
       <Showcase />
       <div data-aos="fade-up">
         <Newsletter />
+      </div>
+      <div data-aos="fade-up">
+        <What />
       </div>
     </div>
   );

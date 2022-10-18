@@ -18,7 +18,7 @@ const NavButton = ({ name, active, url }: navProps) => {
         whileTap={{
           scale: 0.8,
         }}
-        className={`font-[700] ${active && "text-blue-500"} `}
+        className={`font-[700] text-[18px] ${active && "text-blue-500"} `}
       >
         {name}
       </motion.button>
@@ -51,9 +51,9 @@ const Nav = () => {
         {active && <Nav2 active={active} setActive={setActive} />}
 
         <div className=" gap-5 md:flex hidden">
-          <NavButton name="Home" active={true} url={"/"} />
-          <NavButton name="About Us" active={false} url={"/about"} />
-          <NavButton name="Contact Us" active={false} url={"/contact"} />
+          <NavButton name="HOME" active={true} url={"/"} />
+          <NavButton name="ABOUT US" active={false} url={"/about"} />
+          <NavButton name="CONTACT US" active={false} url={"/contact"} />
         </div>
       </div>
     </div>
