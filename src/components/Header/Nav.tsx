@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import logo from "../../assets/imgs/logo.png";
 import Nav2 from "./Nav2";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 type navProps = {
   name: string;
@@ -12,17 +12,17 @@ type navProps = {
 
 const NavButton = ({ name, active, url }: navProps) => {
   return (
-    <Link to={url}>
+    <NavLink to={url}>
       <motion.button
         whileHover={{ scale: 1.2 }}
         whileTap={{
           scale: 0.8,
         }}
-        className={`font-[700] ${active && "text-white"} `}
+        className={`font-[700] ${active && "text-blue-500"} `}
       >
         {name}
       </motion.button>
-    </Link>
+    </NavLink>
   );
 };
 
@@ -51,9 +51,9 @@ const Nav = () => {
         {active && <Nav2 active={active} setActive={setActive} />}
 
         <div className=" gap-5 md:flex hidden">
-          <NavButton name="Home" active={true} url={"home"} />
-          <NavButton name="About Us" active={false} url={"about"} />
-          <NavButton name="Contact Us" active={false} url={"contact"} />
+          <NavButton name="Home" active={true} url={"/"} />
+          <NavButton name="About Us" active={false} url={"/about"} />
+          <NavButton name="Contact Us" active={false} url={"/contact"} />
         </div>
       </div>
     </div>

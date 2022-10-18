@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
 import invest from "../../assets/imgs/Investment.svg";
 import management from "../../assets/imgs/management.svg";
 import management_2 from "../../assets/imgs/management_2.svg";
+import Header from "../Header/Header";
 
 type card = {
   tagline: string;
@@ -99,23 +100,32 @@ const About = () => {
 
   return (
     <div>
-      <div
-        style={{
-          background:
-            "url('https://roboman.ai/wp-content/uploads/2020/03/background-banner.jpg')",
-        }}
-        className="md:p-[5rem]  flex flex-col justify-center items-start"
-      >
-        <p className="font-[900] text-[2rem] text-blue-900">About Us</p>
-        <div>
-          <Link to={"/"}>
-            <span className="font-[700] text-blue-600 ">Home</span> /
-          </Link>
-          <button className="font-[700] text-blue-600 ">About</button>
-        </div>
-      </div>
-
       <div className="lg:px-[4rem] md:p-[3rem] p-[1rem] ">
+        <Header />
+        <div className="md:py-[2rem] pt-[2rem] ">
+          <p className="text-[2em] font-[900] text-blue-900">Our Solutions</p>
+          <hr className="h-[3px]" />
+          <div>
+            <img src="" alt="" />
+            Vehicle Acquisition & Leasing
+          </div>
+          <div>
+            <img src="" alt="" />
+            Driver Services
+          </div>
+          <div>
+            <img src="" alt="" />
+            Vehicle Management
+          </div>
+          <div>
+            <img src="" alt="" />
+            Asset disposal Technology
+          </div>
+          <div>
+            <img src="" alt="" />
+            Small Business Solutions
+          </div>
+        </div>
         {data.map((item) => (
           <Card
             tagline={item.tagline}

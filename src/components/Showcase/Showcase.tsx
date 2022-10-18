@@ -20,8 +20,8 @@ const Showcase = () => {
         }}
         className="h-full lg:w-[50%] md:w-[70%] w-[90%]"
       >
-        <div className=" h-[100%] flex flex-col gap-4 justify-center items-start text-white  ">
-          <p className="font-[900] md:text-[3.5em] text-[2.8em] leading-[1em] backdrop-blur-sm">
+        <div className=" h-[100%] flex flex-col gap-4 justify-center items-start text-black   ">
+          <p className="font-[900] md:text-[3.5em] text-[2.8em] leading-[1em] backdrop-sepia w-full">
             Your Fleet <br /> is an Investment
           </p>
           <span className="backdrop-sepia-0 bg-black/50 text-white  p-2">
