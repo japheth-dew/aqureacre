@@ -6,6 +6,43 @@ import invest from "../../assets/imgs/Investment.svg";
 import management from "../../assets/imgs/management.svg";
 import management_2 from "../../assets/imgs/management_2.svg";
 import Header from "../Header/Header";
+import what_1 from "../../assets/imgs/what_1.jpg";
+import what_2 from "../../assets/imgs/what_2.jpg";
+import what_3 from "../../assets/imgs/what_3.jpg";
+import what_4 from "../../assets/imgs/what_4.jpg";
+import what_5 from "../../assets/imgs/what_5.jpg";
+
+
+
+
+type dataType = {
+  img: string;
+  tagline: string;
+};
+
+const datas: Array<dataType> = [
+  { img: what_1, tagline: "Vehicle Acquisition" },
+  { img: what_2, tagline: "Driver Services" },
+  { img: what_3, tagline: "Vehicle Management" },
+  { img: what_4, tagline: "Asset disposal Technology" },
+  { img: what_5, tagline: "Small Business Solutions" },
+];
+
+const WhatCard = ({ img, tagline }: dataType) => {
+  return (
+    <button className="flex flex-col gap-4 md:p-0 p-[2em]">
+      <div className="overflow-hidden rounded-tr-[6em]  group">
+        <img className="group-hover:scale-125 transition" src={img} alt="" />
+      </div>
+      <div className="flex">
+        <span className="md:text-[20px] text-[16px] text-left text-blue-500">
+          {tagline}...
+        </span>
+      </div>
+    </button>
+  );
+};
+
 
 type card = {
   tagline: string;
@@ -102,32 +139,20 @@ const About = () => {
     <div>
       <div className="lg:px-[4rem] md:p-[3rem] p-[1rem] ">
         <Header />
-        <div className="md:py-[2rem] pt-[2rem] ">
-          <p className="text-[2em] font-[900] text-blue-900">Our Solutions</p>
-          <hr className="h-[3px]" />
+        <div className="md:py-[2rem] pt-[2rem] flex flex-col md:gap-6 gap-2">
           <div>
-            <img src="" alt="" />
-            Vehicle Acquisition & Leasing
+            <p className="text-[2em] font-[900] text-blue-900">Our Solutions</p>
+            <hr className="h-[3px]" />
           </div>
-          <div>
-            <img src="" alt="" />
-            Driver Services
-          </div>
-          <div>
-            <img src="" alt="" />
-            Vehicle Management
-          </div>
-          <div>
-            <img src="" alt="" />
-            Asset disposal Technology
-          </div>
-          <div>
-            <img src="" alt="" />
-            Small Business Solutions
+          <div className="grid lg:grid-cols-3 mg:grid-cols-2 grid-cols-1 gap-5">
+            {datas.map((item) => (
+              <WhatCard img={item.img} tagline={item.tagline} />
+            ))}
           </div>
         </div>
-        {data.map((item) => (
+        {data.map((item, index) => (
           <Card
+          key={index}
             tagline={item.tagline}
             img={item.img}
             tag_text={item.tag_text}

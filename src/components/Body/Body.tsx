@@ -16,7 +16,7 @@ const Body = () => {
       <div data-aos="fade-up">
         <Newsletter />
       </div>
-      <div data-aos="fade-up">
+      <div >
         <What />
       </div>
     </div>
