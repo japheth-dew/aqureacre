@@ -43,7 +43,7 @@ const Nav = () => {
       <div>
         <button
           onClick={() => setActive(true)}
-          className="text-[1.4rem] font-[800] md:hidden inline "
+          className="text-[2rem] font-[800] md:hidden inline "
         >
           ☰
         </button>
