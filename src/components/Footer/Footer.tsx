@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../assets/imgs/logo.png";
+import { NavLink } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -22,8 +23,8 @@ const Footer = () => {
         <div>
           <div className="flex flex-col gap-4 text-white font-[800] text-[1.1rem]">
             <p>Company</p>
-            <p>About </p>
-            <p>Contact</p>
+            <NavLink to={"/about"}>About </NavLink>
+            <NavLink to={"/contact"}>Contact </NavLink>
           </div>
         </div>
       </div>

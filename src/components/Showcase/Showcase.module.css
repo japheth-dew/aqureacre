@@ -6,8 +6,7 @@
 
 @media screen and (max-width: 768px){
     .showcase{
-        background: url("../../assets/imgs/bg_2.jpg") no-repeat ;
-        background-size: cover;
+        background: white;
     }
 }
     

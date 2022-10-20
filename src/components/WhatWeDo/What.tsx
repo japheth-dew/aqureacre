@@ -20,8 +20,8 @@ const data: Array<dataType> = [
 const WhatCard = ({ img, tagline}: dataType) => {
   return (
     <NavLink to={"/about"}>
-      <button className="flex flex-col gap-4 md:p-0 p-[2em]">
-        <div className="overflow-hidden rounded-tr-[6em] h-[18em] group">
+      <button className="flex flex-col md:gap-4 gap-0 md:p-0 p-[2em]">
+        <div className="overflow-hidden rounded-tr-[6em] md:h-[18em] group">
           <img className="group-hover:scale-125 transition" src={img} alt="" />
         </div>
         <div className="flex">
