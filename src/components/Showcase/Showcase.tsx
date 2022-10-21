@@ -20,11 +20,11 @@ const Showcase = () => {
         }}
         className="h-full lg:w-[50%] md:w-[70%] w-[100%]"
       >
-        <div className=" h-[100%] flex flex-col gap-4 justify-center  text-black   ">
+        <div className=" h-[100%] flex flex-col gap-4 justify-center  md:text-black text-blue-900   ">
           <p className="font-[900] md:text-[3.5em] text-[2.8em] leading-[1em]  w-full">
             Your Fleet <br /> is an Investment
           </p>
-          <span className="backdrop-sepia-0 md:text-[20px] text-[2em] bg-blue-900/80 text-white  p-2">
+          <span className="md:backdrop-sepia-0 md:text-[20px] text-[2em] md:bg-blue-900/80 md:text-white bg-none md:font-[500] text-blue-900 font-[600]  p-2">
             Your fleet is more than just a set of transactional costs — it’s an
             investment. With an integrated strategy and big picture thinking, it
             can also drive growth and fuel success for your company.
