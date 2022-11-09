@@ -6,43 +6,47 @@ import invest from "../../assets/imgs/Investment.svg";
 import management from "../../assets/imgs/management.svg";
 import management_2 from "../../assets/imgs/management_2.svg";
 import Header from "../Header/Header";
-import what_1 from "../../assets/imgs/what_1.jpg";
-import what_2 from "../../assets/imgs/what_2.jpg";
-import what_3 from "../../assets/imgs/what_3.jpg";
-import what_4 from "../../assets/imgs/what_4.jpg";
-import what_5 from "../../assets/imgs/what_5.jpg";
-
-
-
 
 type dataType = {
-  img: string;
-  tagline: string;
+  header: string;
+  beforeword: string;
+  word: string;
 };
 
-const datas: Array<dataType> = [
-  { img: what_1, tagline: "Vehicle Acquisition" },
-  { img: what_2, tagline: "Driver Services" },
-  { img: what_3, tagline: "Vehicle Management" },
-  { img: what_4, tagline: "Asset disposal Technology" },
-  { img: what_5, tagline: "Small Business Solutions" },
+const whatData: Array<dataType> = [
+  {
+    header: "Vehicle Acquisition:  ",
+    beforeword: "",
+    word: "Creating a fleet that aligns  your company’s overall  goals requires deliberate and strategic actions Square Acre can help you make the right financial decisions for your business’s needs.",
+  },
+  {
+    header: "Driver Services:",
+    beforeword: "Manage Your Drivers, Enhance Your Results",
+    word: "Administrative roadblocks and high-risk driver behaviour reduce productivity and drive up costs. From training to compliance, Square Acre  fleet driver support enables you to better manage your workforce, build a culture of safety, and positively impact your bottom line.",
+  },
+  {
+    header: "Vehicle Acquisition:  ",
+    beforeword: "Optimise Fleet investment",
+    word: "Vehicles are complex machines, and managing a fleet of them is no easy task. The right resources can help you maximize productivity and minimize downtime. Whether you need to track vehicle performance, manage maintenance costs, or track fuel efficiency, Square Acre can help you get the most out of your investment.",
+  },
+  {
+    header: "Asset Disposal:  ",
+    beforeword: "",
+    word: "Selling your vehicles requires significant time and effort, especially when you’re trying to get the most value. Square Acre  remarketing services provide access to more channels, putting your vehicles in front of the right buyers at the right time, maximising proceeds, and reducing time to sale.",
+  },
 ];
 
-const WhatCard = ({ img, tagline }: dataType) => {
+const WhatCard = ({ header, beforeword, word }: dataType) => {
   return (
-    <button className="flex flex-col gap-4 md:p-0 p-[2em]">
-      <div className="overflow-hidden rounded-tr-[6em]  group">
-        <img className="group-hover:scale-125 transition" src={img} alt="" />
+    <div className=" w-full  ">
+      <h1 className="font-[900] text-[22px] text-blue-900">{header}</h1>
+      <div className="w-full  bg-blue-900 p-[1em] text-white text-[18px] font-[500] rounded-md">
+        <p className="font-[700] text-[30px]">{beforeword}</p>
+        <p>{word}</p>
       </div>
-      <div className="flex">
-        <span className="md:text-[20px] text-[16px] text-left text-blue-500">
-          {tagline}...
-        </span>
-      </div>
-    </button>
+    </div>
   );
 };
-
 
 type card = {
   tagline: string;
@@ -144,15 +148,22 @@ const About = () => {
             <p className="text-[2em] font-[900] text-blue-900">Our Solutions</p>
             <hr className="h-[3px]" />
           </div>
-          <div className="grid lg:grid-cols-3 mg:grid-cols-2 grid-cols-1 gap-5">
-            {datas.map((item) => (
-              <WhatCard img={item.img} tagline={item.tagline} />
-            ))}
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-[2rem]  ">
+            {whatData.map((item, index) => {
+              return (
+                <WhatCard
+                  key={index}
+                  header={item.header}
+                  beforeword={item.beforeword}
+                  word={item.word}
+                />
+              );
+            })}
           </div>
         </div>
         {data.map((item, index) => (
           <Card
-          key={index}
+            key={index}
             tagline={item.tagline}
             img={item.img}
             tag_text={item.tag_text}

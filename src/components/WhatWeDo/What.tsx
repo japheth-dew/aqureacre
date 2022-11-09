@@ -11,28 +11,28 @@ type dataType = {
   tagline: string;
 };
 
-const data: Array<dataType> = [
-  { img: what_1, tagline: "Vehicle Acquisition" },
-  { img: what_2, tagline: "Driver Services" },
-  { img: what_3, tagline: "Vehicle Management" },
-];
+// const data: Array<dataType> = [
+//   { img: what_1, tagline: "Vehicle Acquisition" },
+//   { img: what_2, tagline: "Driver Services" },
+//   { img: what_3, tagline: "Vehicle Management" },
+// ];
 
-const WhatCard = ({ img, tagline}: dataType) => {
-  return (
-    <NavLink to={"/about"}>
-      <button className="flex flex-col md:gap-4 gap-0 md:p-0 p-[2em]">
-        <div className="overflow-hidden rounded-tr-[6em] md:h-[18em] group">
-          <img className="group-hover:scale-125 transition" src={img} alt="" />
-        </div>
-        <div className="flex">
-          <span className="md:text-[20px] text-[16px] text-left text-blue-500">
-            {tagline}...
-          </span>
-        </div>
-      </button>
-    </NavLink>
-  );
-};
+// const WhatCard = ({ img, tagline}: dataType) => {
+//   return (
+//     <NavLink to={"/about"}>
+//       <button className="flex flex-col md:gap-4 gap-0 md:p-0 p-[2em]">
+//         <div className="overflow-hidden rounded-tr-[6em] md:h-[18em] group">
+//           <img className="group-hover:scale-125 transition" src={img} alt="" />
+//         </div>
+//         <div className="flex">
+//           <span className="md:text-[20px] text-[16px] text-left text-blue-500">
+//             {tagline}...
+//           </span>
+//         </div>
+//       </button>
+//     </NavLink>
+//   );
+// };
 
 const What = () => {
   useEffect(() => {
@@ -75,11 +75,11 @@ const What = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 mg:grid-cols-2 grid-cols-1 gap-5">
+        {/* <div className="grid lg:grid-cols-3 mg:grid-cols-2 grid-cols-1 gap-5">
           {data.map(item=>(
             <WhatCard img={item.img} tagline={item.tagline}/>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );
