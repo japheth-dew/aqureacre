@@ -1,15 +1,15 @@
 import { useEffect } from "react";
 import Slider from "./Slider";
 import Aos from "aos";
-import what_1 from "../../assets/imgs/what_1.jpg";
-import what_2 from "../../assets/imgs/what_2.jpg";
-import what_3 from "../../assets/imgs/what_3.jpg";
-import { NavLink } from "react-router-dom";
+// import what_1 from "../../assets/imgs/what_1.jpg";
+// import what_2 from "../../assets/imgs/what_2.jpg";
+// import what_3 from "../../assets/imgs/what_3.jpg";
+// import { NavLink } from "react-router-dom";
 
-type dataType = {
-  img: string;
-  tagline: string;
-};
+// type dataType = {
+//   img: string;
+//   tagline: string;
+// };
 
 // const data: Array<dataType> = [
 //   { img: what_1, tagline: "Vehicle Acquisition" },
