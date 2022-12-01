@@ -11,7 +11,7 @@ const Contact = () => {
               Contact Us
             </p>
             <p className="p-4 md:text-[20px] text-[16px]">
-              Our fleet management services can help you optimize your
+              Our fleet management services can help you optimise your
               operation, reduce lifcost, and keep your business moving.
             </p>
           </div>
