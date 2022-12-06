@@ -62,7 +62,7 @@ const What = () => {
         </div>
       </div>
 
-      <div data-aos="fade-up" className="flex flex-col gap-[2em]">
+      <div data-aos="fade-up" className="flex flex-col gap-[2em] mt-3">
         <div className="text-center">
           <p className="font-[700] lg:text-[3em] md:text-[2em] text-[1.6em]  w-full bg-yellow-500 rounded-full ">
             Our Fleet Management Services

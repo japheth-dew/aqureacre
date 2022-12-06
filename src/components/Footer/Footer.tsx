@@ -1,7 +1,6 @@
 import React from "react";
 import logo from "../../assets/imgs/logo.png";
-import { NavLink } from 'react-router-dom';
-
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -14,7 +13,7 @@ const Footer = () => {
             </div>
             <span>
               We can deliver a total solution - bespoke for you. <br />
-              We work with you to provide solutions that reflects your <br />
+              We work with you to provide solutions that reflect your <br />
               aspirations and protects your brand values .
             </span>
           </div>

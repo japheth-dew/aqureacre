@@ -17,7 +17,7 @@ const whatData: Array<dataType> = [
   {
     header: "Vehicle Acquisition:  ",
     beforeword: "",
-    word: "Creating a fleet that aligns  your company’s overall  goals requires deliberate and strategic actions Square Acre can help you make the right financial decisions for your business’s needs.",
+    word: "Creating a fleet that aligns  your company’s overall  goals requires deliberate and strategic actions. Square Acre can help you make the right financial decisions for your business’s needs.",
   },
   {
     header: "Driver Services:",
